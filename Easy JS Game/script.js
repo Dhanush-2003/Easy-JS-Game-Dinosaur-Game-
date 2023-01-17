@@ -12,7 +12,10 @@ function jump(){
     },300);
 }
 var checkDead = setInterval(function() {
+
     
+    let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+
     let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     
     let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
